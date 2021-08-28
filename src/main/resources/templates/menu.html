@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="content-type" charset="UTF-8">
+<title>Menu</title>
+</head>
+<body>
+<h1>Menu</h1>
+<form method="post" action="/Fortune">
+<input type="submit" value="占う"/>
+</form>
+</br>
+<tr>
+<td>結果</td>
+<td th:text="${fortune}"></td>
+</tr>
+<form method="post" action="/Weather">
+<input type="submit" value="天気"/>
+</form>
+</br>
+<tr>
+<td>結果</td>
+<td th:text="${weather}"></td>
+</tr>
+</body>
+</html>
